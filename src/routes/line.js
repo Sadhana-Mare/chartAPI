@@ -1,4 +1,3 @@
-
 import { Router } from 'express';
 
 const router = Router();
@@ -6,7 +5,8 @@ const router = Router();
 router.get('/result', (req, res) => {
   mysqlConnection.query('SELECT * FROM result', (err, rows, fields) => {
     if (!err)
-    {console.log("rows",rows)
+    {
+      console.log("rows",rows)
         res.send(rows);
 }
     else
@@ -14,6 +14,7 @@ router.get('/result', (req, res) => {
 })
   return res.send(rows);
 });
+
 
 
 

@@ -1,9 +1,9 @@
 import session from './session';
-import user from './user';
+import line from './line';
 import message from './message';
 
 export default {
   session,
-  user,
+  line,
   message,
 };
